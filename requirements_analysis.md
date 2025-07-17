@@ -60,7 +60,7 @@
   - Texto (**opcional**, hasta 500 caracteres).
   - Imágenes adjuntas (**opcional**, máx. 3; formatos JPG/PNG; hasta 2MB cada una).
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** un usuario autenticado con compra válida, **When** intenta crear una reseña, **Then** el sistema permite la creación si cumple los requisitos de formato y cantidad.
 - **Given** un usuario sin compra válida, **When** intenta crear una reseña, **Then** el sistema rechaza la acción y muestra un mensaje de error.
 - **Given** una reseña con más de 500 caracteres en el texto, **When** intenta enviarla, **Then** el sistema rechaza la acción y muestra un mensaje de error.
