@@ -72,7 +72,7 @@
 - El administrador puede aprobar o rechazar la reseña, indicando el motivo en caso de rechazo.
 - El usuario recibe notificación sobre el estado de su reseña (aprobada/rechazada).
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** una reseña enviada, **When** el administrador la aprueba, **Then** la reseña se publica y es visible para todos.
 - **Given** una reseña enviada, **When** el administrador la rechaza, **Then** la reseña no se publica y el usuario recibe el motivo del rechazo.
 
@@ -83,7 +83,7 @@
 - Solo las reseñas aprobadas son visibles para otros usuarios.
 - Las reseñas rechazadas no son visibles en la página del producto.
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** una reseña pendiente, **When** el usuario accede a la página del producto, **Then** ve su reseña con estado “pendiente”.
 - **Given** una reseña aprobada, **When** cualquier usuario accede a la página del producto, **Then** la reseña es visible.
 - **Given** una reseña rechazada, **When** el usuario accede a la página del producto, **Then** la reseña no aparece.
@@ -94,7 +94,7 @@
 - El sistema muestra el promedio de calificaciones en la página del producto, **calculado solo con reseñas aprobadas**.
 - El promedio se actualiza automáticamente al aprobar o eliminar una reseña.
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** varias reseñas aprobadas, **When** se aprueba una nueva reseña, **Then** el promedio se recalcula y actualiza.
 - **Given** una reseña eliminada, **When** se elimina, **Then** el promedio se recalcula y actualiza.
 
@@ -105,7 +105,7 @@
 - El sistema valida el formato y tamaño de los campos antes de guardar la reseña.
 - Los usuarios pueden reportar reseñas inapropiadas.
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** una reseña con lenguaje ofensivo, **When** se envía, **Then** el sistema rechaza la reseña y muestra un mensaje de error.
 - **Given** una imagen fuera de formato/tamaño, **When** se adjunta, **Then** el sistema rechaza la imagen y muestra un mensaje de error.
 - **Given** una reseña inapropiada, **When** otro usuario la reporta, **Then** el sistema notifica al administrador para revisión.
@@ -117,7 +117,7 @@
 - Solo administradores pueden aprobar/rechazar reseñas.
 - La identidad del usuario se protege y no se muestra públicamente, salvo el nombre de usuario.
 
-**Acceptance Criteria:**
+**Criterios de Aceptación:**
 - **Given** un usuario no autenticado, **When** intenta crear/editar/eliminar una reseña, **Then** el sistema rechaza la acción.
 - **Given** un usuario autenticado, **When** accede a la página del producto, **Then** solo ve su nombre de usuario asociado a su reseña.
 
